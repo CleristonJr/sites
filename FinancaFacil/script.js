@@ -21,7 +21,7 @@ let stockChart;
 function initializeChart() {
     const ctx = document.getElementById('stockChart').getContext('2d');
     stockChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',  // Alteração para gráfico de barras
         data: stockData,
         options: {
             scales: {
