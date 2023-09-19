@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Estoque</h1>
+        <label for="itemQuantity">Quantidade de itens em estoque:</label>
+        <input type="number" id="itemQuantity" placeholder="Quantidade">
+
+        <label for="itemPrice">Preço por item:</label>
+        <input type="number" id="itemPrice" placeholder="Preço">
+
+        <button onclick="calculateTotal()">Calcular</button>
+
+        <h2>Total em Estoque:</h2>
+        <div id="total"></div>
+
+        <h2>Calcular Saída:</h2>
+        <label for="quantityToSell">Quantidade a ser vendida:</label>
+        <input type="number" id="quantityToSell" placeholder="Quantidade">
+
+        <button onclick="calculateSale()">Calcular Saída</button>
+
+        <h2>Novo Total em Estoque:</h2>
+        <div id="newTotal"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
